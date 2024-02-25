@@ -61,4 +61,5 @@ console.log(`${invite_person[2]} you are invited for the dinner`);
 // part A
 console.log(`${invite_person[2]} can not make the dinner`);
 // part B
-let name = "Haroon";
+const changePerson = invite_person[2] = "Raheel";
+console.log(invite_person);
