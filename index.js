@@ -43,10 +43,9 @@ for (let friendsName of friendsNames) {
     console.log(friendsName);
 }
 // Question # 12
-console.log(`Hello!${friendsNames[0]}`);
-console.log(`Hello!${friendsNames[1]}`);
-console.log(`Hello!${friendsNames[2]}`);
-console.log(`Hello!${friendsNames[3]}`);
+for (let friendsName of friendsNames) {
+    console.log(`Hello! friendsName`);
+}
 // Question # 13
 const favouriteTransport = ["motorcycle", "civic", "bicycle"];
 console.log(`i would like to own a Honda ${favouriteTransport[0]}`);
@@ -54,12 +53,59 @@ console.log(`i would like to buy brand new Honda ${favouriteTransport[1]}`);
 console.log(`My younger brother has to get ${favouriteTransport[2]}`);
 // Question # 14
 const invite_person = ["shan", "haris", "Tahir"];
-console.log(`${invite_person[0]} you are invited for the dinner`);
-console.log(`${invite_person[1]} you are invited for the dinner`);
-console.log(`${invite_person[2]} you are invited for the dinner`);
+for (let invite of invite_person) {
+    console.log(`${invite} you are invited for dinner`);
+}
 // Question # 15
-// part A
+// Requirment A
 console.log(`${invite_person[2]} can not make the dinner`);
-// part B
-const changePerson = invite_person[2] = "Raheel";
+// Requirment B
+invite_person[2] = "Raheel";
+for (let invite of invite_person) {
+    console.log(`${invite} you are invited for dinner`);
+}
+// Question # 16
+// Requirment A
+for (let invite of invite_person) {
+    console.log(`${invite} I  have founde a bigger dinner table`);
+}
+// Requirment B
+invite_person.unshift("Wasey");
+console.log(invite_person);
+invite_person.splice(2, 0, "Haroon");
+console.log(invite_person);
+invite_person.push("Raheem");
+console.log(invite_person);
+for (let invite of invite_person) {
+    console.log(`${invite} you are invited for the dinner`);
+}
+// Question # 17
+// Requirment A
+for (let invite of invite_person) {
+    console.log(`${invite} i can invite only two peoples for the dinner`);
+}
+// Requirment B
+const removelast1 = invite_person.pop();
+console.log(` sorry ${removelast1} i can't invite you for dinner`);
+console.log(invite_person);
+const removelast2 = invite_person.pop();
+console.log(` sorry ${removelast2} i can't invite you for dinner`);
+console.log(invite_person);
+const removelast3 = invite_person.pop();
+console.log(` sorry ${removelast3} i can't invite you for dinner`);
+console.log(invite_person);
+const removelast4 = invite_person.pop();
+console.log(` sorry ${removelast4} i can't invite you for dinner`);
+console.log(invite_person);
+// Requirment C
+for (let invite of invite_person) {
+    console.log(`${invite} i am still inviting you for dinner`);
+}
+console.log(invite_person);
+// Requirment D
+const removelast5 = invite_person.pop();
+console.log(`${removelast5} removed`);
+console.log(invite_person);
+const removelast6 = invite_person.pop();
+console.log(`${removelast6} removed`);
 console.log(invite_person);
